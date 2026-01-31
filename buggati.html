@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bugatti Chiron | Stride Digital Museum</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e6a219",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#211c11",
+                        "platinum": "#d1d5db",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-white font-display transition-colors duration-300">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 bg-background-dark/80 backdrop-blur-md border-b border-white/10">
+<div class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
+<div class="flex items-center gap-12">
+<div class="flex items-center gap-3">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold tracking-tighter uppercase italic">Stride</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-white/70 hover:text-white text-sm font-medium transition-colors" href="#">Museum</a>
+<a class="text-white/70 hover:text-white text-sm font-medium transition-colors" href="#">Marketplace</a>
+<a class="text-white/70 hover:text-white text-sm font-medium transition-colors" href="#">Heritage</a>
+<a class="text-white/70 hover:text-white text-sm font-medium transition-colors" href="#">Events</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden lg:flex items-center bg-white/5 rounded-full px-4 py-2 border border-white/10">
+<span class="material-symbols-outlined text-white/50 text-xl">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-48 placeholder:text-white/30" placeholder="Search archive..." type="text"/>
+</div>
+<button class="bg-primary text-background-dark px-6 py-2.5 rounded-full text-sm font-bold tracking-wide hover:brightness-110 transition-all">
+                    Enquire Now
+                </button>
+</div>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[85vh] w-full overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Bugatti Chiron in Le Mans blue exterior shot" style="background-image: linear-gradient(to bottom, rgba(33, 28, 17, 0.4), rgba(33, 28, 17, 0.9)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDElwEhzyMbmfEd9MUWsUdoaxesgf20upVW3903ifBeDOM_JcVp4frPVnOKY8ZILRg0d5hwRK-LZddNzTOgKjPIlreTz8THHjubYpQ_NR3Dvw2_EFkG-y4DDlpZ9h8Zfd5YbSvLZ5ID2zbK6ETppIdhCDrBOKF_4uErq_BPrpLkuRHRQ3AC4z-o06CNxo1e14zdAdLJHh_KrN-zvOjZ-Jm5QLnOtFU8SJ_iqV0tRrl7RRFaVRPWDQSHWC-OlExMNRxmBDUEiEPWk4yo');"></div>
+<div class="relative h-full max-w-7xl mx-auto px-10 flex flex-col justify-end pb-20">
+<div class="space-y-4">
+<span class="text-primary font-bold tracking-[0.3em] uppercase text-xs">Modern Icon</span>
+<h1 class="text-6xl md:text-8xl font-light tracking-tighter leading-none">Bugatti <span class="font-bold">Chiron</span></h1>
+<p class="text-xl text-platinum/80 max-w-2xl font-light leading-relaxed">The Chiron is the fastest, most powerful, and exclusive production super sports car in BUGATTI’s history.</p>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50">
+<span class="text-[10px] uppercase tracking-[0.2em]">Scroll Details</span>
+<div class="w-px h-12 bg-gradient-to-b from-white to-transparent"></div>
+</div>
+</section>
+<!-- Spec Bar (Platinum Accents) -->
+<section class="border-y border-white/5 bg-background-dark">
+<div class="max-w-7xl mx-auto px-10">
+<div class="flex flex-wrap md:flex-nowrap justify-between items-center py-12 gap-8">
+<div class="flex-1 text-center md:text-left">
+<p class="text-platinum/50 text-xs uppercase tracking-widest mb-1">Max Power</p>
+<p class="text-3xl font-bold tracking-tight">1,500 <span class="text-sm font-light text-platinum/70 uppercase ml-1">HP</span></p>
+</div>
+<div class="hidden md:block w-px h-12 bg-white/10"></div>
+<div class="flex-1 text-center md:text-left">
+<p class="text-platinum/50 text-xs uppercase tracking-widest mb-1">Acceleration</p>
+<p class="text-3xl font-bold tracking-tight">2.4 <span class="text-sm font-light text-platinum/70 uppercase ml-1">Secs</span></p>
+</div>
+<div class="hidden md:block w-px h-12 bg-white/10"></div>
+<div class="flex-1 text-center md:text-left">
+<p class="text-platinum/50 text-xs uppercase tracking-widest mb-1">Top Velocity</p>
+<p class="text-3xl font-bold tracking-tight">420 <span class="text-sm font-light text-platinum/70 uppercase ml-1">km/h</span></p>
+</div>
+<div class="hidden md:block w-px h-12 bg-white/10"></div>
+<div class="flex-1 text-center md:text-left">
+<p class="text-platinum/50 text-xs uppercase tracking-widest mb-1">Engine Type</p>
+<p class="text-3xl font-bold tracking-tight">8.0L <span class="text-sm font-light text-platinum/70 uppercase ml-1">W16</span></p>
+</div>
+</div>
+</div>
+</section>
+<!-- W16 Feature Module -->
+<section class="py-24 max-w-7xl mx-auto px-10">
+<div class="grid lg:grid-cols-2 gap-20 items-center">
+<div class="space-y-8">
+<div class="space-y-4">
+<h2 class="text-4xl font-bold tracking-tight">Engineering Masterpiece: <span class="text-primary italic">The W16</span></h2>
+<div class="h-1 w-20 bg-primary"></div>
+</div>
+<p class="text-platinum/70 text-lg leading-relaxed font-light">
+                        At the heart of the Chiron is the legendary 8.0-liter W16 engine. This mechanical symphony features four turbochargers with two-stage turbocharging, providing effortless power delivery that remains unparalleled in the automotive world.
+                    </p>
+<div class="grid grid-cols-2 gap-6 pt-4">
+<div class="bg-white/5 p-6 rounded-xl border border-white/5">
+<span class="material-symbols-outlined text-primary mb-3">settings_input_component</span>
+<h4 class="font-bold mb-1">Quad-Turbo</h4>
+<p class="text-sm text-platinum/50">Two-stage controlled turbocharging system.</p>
+</div>
+<div class="bg-white/5 p-6 rounded-xl border border-white/5">
+<span class="material-symbols-outlined text-primary mb-3">precision_manufacturing</span>
+<h4 class="font-bold mb-1">Titanium</h4>
+<p class="text-sm text-platinum/50">Lightweight exhaust system with 6-flow layout.</p>
+</div>
+</div>
+<button class="flex items-center gap-2 text-primary font-bold tracking-wider uppercase text-sm group">
+                        Full Technical Specs
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary/20 blur-3xl opacity-20 group-hover:opacity-40 transition-opacity"></div>
+<div class="relative rounded-2xl overflow-hidden aspect-square shadow-2xl border border-white/10" data-alt="Detailed macro shot of the Bugatti W16 engine block" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBX1dZyrI4c9AX7L3hKSotdMLj5VQXKdYQYRfYG8hh3vP43CXw265bDaSWzvf0yHvnxPjXFPxwgEkV8520ljqMLIELC6Qw-BwPU832kHANY5N93JzaOqPLakfT-ECaWTdkHkTnjjigMlZNJZdKjMZa5yl1y51Tdee0bzmmVZ9IHllv0YE76UZknppHwRLSRajopAxyuXBnP2paMHUU7uhONUbvagf2SQu1EDJNVC2FzSUaGYI4nGUZ_A9NMpI2e3uHXAEc5QyA-o6UQ'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interior Masonry Gallery -->
+<section class="py-24 bg-white/[0.02]">
+<div class="max-w-7xl mx-auto px-10">
+<div class="flex justify-between items-end mb-12">
+<div class="space-y-2">
+<span class="text-primary font-bold tracking-[0.2em] uppercase text-xs">Exquisite Details</span>
+<h2 class="text-4xl font-light">The Artisanal <span class="font-bold">Cabin</span></h2>
+</div>
+<p class="text-platinum/50 text-right max-w-sm hidden md:block">Every surface is hand-finished with the finest leather, carbon fiber, and polished aluminum.</p>
+</div>
+<div class="grid grid-cols-12 gap-6">
+<!-- Masonry Grid -->
+<div class="col-span-12 md:col-span-8 aspect-[16/9] rounded-2xl overflow-hidden group relative" data-alt="Widescreen interior shot of Bugatti Chiron dashboard" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAABNqLEEgnGhcLDIvY6q0kKq_hkap0nDQm2FtQb1a1fCG32tYtf-rZ42Zf_h-a6QEpgzk1rETyGNyvGxSM6e9UMWMGebZgKLBIDsTADCMjDX7-B4X1b7SNC1AmskN0q6jIdmdx_W05nhOb1qhJJ21Zgicsmd97g6omDhJeC_i3BtMOFk4_6Gb0KJVJSEkJHGsJ2FBMJmD1CTr1BLuRye_kN1xteBi2sHrDt3DrgEgL8_iHBMnHoUEQHPaUVNcOFEpx02e7Gkw1eZpj'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-background-dark/0 group-hover:bg-background-dark/20 transition-all"></div>
+</div>
+<div class="col-span-12 md:col-span-4 aspect-square md:aspect-auto rounded-2xl overflow-hidden group relative" data-alt="Close up of Bugatti Chiron gear shifter" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAOhRDmA9su70nZqLMaNSet0tgbRbBHEZtEuoQtBcgBAYBTMEEgN9QoaTvspLyg6Io5H3Q2GW66nFRSIc9qRvPRd6Sck2-loxU1GkVR0m5SgbPtFKfu632_j7Trkzt7ExARQG5dM5Ro1wmoYILNNnMRU5lNFkROvGiSWSfqzOfUjc1UFlfGQ5LhqveQzNHRx2m6gWQ-B0-Jasg3QXmGnrey3yxdDm9iC41kHe-0HoCmGCel9aNWq27c40sFYdFEBZgfCZ97CyVix-PI'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-background-dark/0 group-hover:bg-background-dark/20 transition-all"></div>
+</div>
+<div class="col-span-12 md:col-span-4 aspect-square rounded-2xl overflow-hidden group relative" data-alt="Bugatti Chiron steering wheel detail" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDjeV7Z2ioF0i8KRqxO7kB8k-IT9A0UKiW_y6YPCEtIjeczgXpxc8R7MYKqXLysb1hLczYX8e3FXxre64jIwYKnF3hhSIz0jMWRuRC-uM34GNxNQLQ2PMI-s70_sQ1HqsHX2OIV-LApR807KP4FB7P_XWfYoa_KgFaCZRXEAna7YyUZbLf4rK3AV5AWubfyyDzC0lxTHay992FIHUIBY0ckQpuexsTMPk_QKbVIAqzw6L3Ph2LL9INLUvJac3Ilal_O8MUQCs2QoqCh'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-background-dark/0 group-hover:bg-background-dark/20 transition-all"></div>
+</div>
+<div class="col-span-12 md:col-span-8 aspect-[16/9] md:aspect-auto rounded-2xl overflow-hidden group relative" data-alt="Rear view of the Chiron showing light signature" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAj7nXzqHJlP6FJuiLPU1CLCBtbOLcri7YXpbRnG-b7qABsMkT0lsngbKIrG8-TOtd2lLYeA00H3UwSoa90KGFzBknyZWJ8QGVP_RBzNPb0wCgxBztJwF5DhqDZYOqNtKC3yLs0tCf0sp4KTdB5DAP8b4bcj1wb-2acG4HNHwZHJBLMJuD0rK5lRmCAajN3Y3A7c-1zDf00C038pUzocH4qQuw2yVLhuVDvJVm2U3qrOjwmTB8GdZATaQyHkM8BD3qJ2w3XE-ET-_5G'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-background-dark/0 group-hover:bg-background-dark/20 transition-all"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-32 bg-background-dark relative overflow-hidden">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full opacity-10">
+<h1 class="text-[20vw] font-black italic tracking-tighter text-white whitespace-nowrap opacity-20 select-none">BUGATTI CHIRON</h1>
+</div>
+<div class="max-w-4xl mx-auto px-10 relative z-10 text-center space-y-10">
+<h2 class="text-5xl font-bold tracking-tight">Own a piece of history.</h2>
+<p class="text-platinum/60 text-xl font-light">The Chiron is more than a car; it's a testament to human ingenuity and the pursuit of perfection. Private viewing by appointment only.</p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+<button class="w-full sm:w-auto bg-primary text-background-dark px-10 py-5 rounded-full text-lg font-bold tracking-wider hover:scale-105 transition-transform">
+                        Enquire for Pricing
+                    </button>
+<button class="w-full sm:w-auto bg-white/5 border border-white/10 text-white px-10 py-5 rounded-full text-lg font-bold tracking-wider hover:bg-white/10 transition-colors">
+                        Download Brochure
+                    </button>
+</div>
+<div class="pt-10 flex items-center justify-center gap-12 grayscale opacity-50">
+<span class="text-xs tracking-widest uppercase font-medium">Molsheim Atelier</span>
+<span class="text-xs tracking-widest uppercase font-medium">Limited Edition</span>
+<span class="text-xs tracking-widest uppercase font-medium">1 of 500</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-background-dark border-t border-white/5 py-16">
+<div class="max-w-7xl mx-auto px-10">
+<div class="grid md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-2 space-y-6">
+<div class="flex items-center gap-3">
+<div class="size-5 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold tracking-tighter uppercase italic">Stride</h2>
+</div>
+<p class="text-platinum/40 text-sm max-w-sm">Curating the world's most exceptional automotive achievements since 1994. Stride is a sanctuary for the mechanical elite.</p>
+</div>
+<div class="space-y-4">
+<h4 class="text-sm font-bold uppercase tracking-widest">Collections</h4>
+<ul class="space-y-2 text-sm text-platinum/50 font-light">
+<li><a class="hover:text-primary transition-colors" href="#">90s Legends</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">The Hypercar Era</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Future Classics</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Concept Archive</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="text-sm font-bold uppercase tracking-widest">Connect</h4>
+<ul class="space-y-2 text-sm text-platinum/50 font-light">
+<li><a class="hover:text-primary transition-colors" href="#">Instagram</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">X (Twitter)</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">YouTube</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Newsletter</a></li>
+</ul>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 pt-12 border-t border-white/5">
+<p class="text-[10px] text-platinum/30 uppercase tracking-[0.2em]">© 2024 Stride Automotive Museum. All Rights Reserved.</p>
+<div class="flex gap-8">
+<a class="text-[10px] text-platinum/30 uppercase tracking-[0.2em] hover:text-white" href="#">Privacy</a>
+<a class="text-[10px] text-platinum/30 uppercase tracking-[0.2em] hover:text-white" href="#">Terms</a>
+<a class="text-[10px] text-platinum/30 uppercase tracking-[0.2em] hover:text-white" href="#">Cookies</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Stride | Timeless Velocity</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#eec02b", // Gold
+                        "background-light": "#f8f8f6",
+                        "background-dark": "#121212", // Charcoal
+                        "matte-black": "#0a0a0a", // Deep Black
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "4px",
+                        "lg": "4px",
+                        "xl": "4px",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+
+    <style>
+        /* Glass Effect for Sticky Header */
+        .glass-header {
+            background: rgba(18, 18, 18, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(238, 192, 43, 0.1);
+        }
+
+        /* Glass Effect for Cards */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .glass-card:hover {
+            background: rgba(238, 192, 43, 0.03);
+            border: 1px solid rgba(238, 192, 43, 0.4);
+            transform: translateY(-4px);
+        }
+
+        /* Utility: Hide Scrollbar */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        /* FAB Glow */
+        .fab-glow {
+            box-shadow: 0 0 20px rgba(238, 192, 43, 0.3);
+        }
+        .fab-glow:hover {
+            box-shadow: 0 0 30px rgba(238, 192, 43, 0.5);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 selection:bg-primary/30 antialiased">
+
+    <header class="fixed top-0 left-0 right-0 z-50 glass-header">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3 group cursor-pointer">
+                <div class="w-10 h-10 border border-primary flex items-center justify-center rotate-45 transition-transform group-hover:rotate-90">
+                    <span class="material-symbols-outlined text-primary -rotate-45 text-xl">stat_3</span>
+                </div>
+                <h1 class="text-2xl font-bold tracking-[0.2em] uppercase text-white">Stride</h1>
+            </div>
+
+            <nav class="hidden md:flex items-center gap-12">
+                <a class="text-xs font-semibold tracking-widest uppercase hover:text-primary transition-colors" href="#">Showroom</a>
+                <a class="text-xs font-semibold tracking-widest uppercase hover:text-primary transition-colors" href="#">Heritage</a>
+                <a class="text-xs font-semibold tracking-widest uppercase hover:text-primary transition-colors" href="#">Modern Era</a>
+                <a class="text-xs font-semibold tracking-widest uppercase hover:text-primary transition-colors" href="#">Enquire</a>
+            </nav>
+
+            <button class="px-6 py-2 border border-white/20 text-xs font-bold tracking-widest uppercase hover:bg-white hover:text-black transition-all">
+                The Garage
+            </button>
+        </div>
+    </header>
+
+    <section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-matte-black z-0">
+          <!-- <div 
+            class="absolute inset-0 opacity-40 bg-cover bg-center" 
+            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCJhSzqqbOp9t1TGqfT8h6bpjqz2I0r24Xu6Ou4L8HlGFw3uasKahlax7MyXZpXI1Mcjz2OTw1jB_DHPPmFGUwO6WSxU3mjiwU984CdB7ZA7ryzQCImo1-HaHvfa0HJ1izzQRtynJT7UYlpjowBNsofuLosjUuBx8NW3ReVTlf5uJh3UUMXwvttZ59g7bALyyLW1Olkrid1pzI6cSb-UGbmkKTyMwSBDezS--ZQRdDECDLJqfMnxvx--fA7Njjv_un2l4YiihSTR6kQ');"
+          >
+          </div> -->
+          <video 
+            class="absolute inset-0 w-full h-full object-cover opacity-60" 
+            autoplay 
+            loop 
+            muted 
+            playsinline
+          >
+            <source src="stride-hero.mp4" type="video/mp4">
+          </video>
+          <!-- <div class="absolute inset-0 bg-gradient-to-b from-transparent via-background-dark/20 to-background-dark"></div> -->
+          <div class="absolute inset-0 bg-gradient-to-b from-black/10 via-background-dark/20 to-background-dark"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <span class="text-primary tracking-[0.4em] uppercase text-xs font-bold mb-6 block opacity-0 animate-[fadeIn_1s_ease-out_forwards]">
+                Automotive Excellence
+            </span>
+            <h1 class="font-serif text-6xl md:text-9xl text-white mb-8 leading-tight">
+                Timeless <br /><span class="italic">Velocity</span>
+            </h1>
+            <p class="text-white/60 text-lg md:text-xl font-light mb-12 max-w-xl mx-auto tracking-wide">
+                From the legendary icons of the 90s to the hybrid masterworks of today. Explore the digital museum of speed.
+            </p>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                <button class="px-10 py-4 bg-primary text-black text-sm font-bold tracking-[0.2em] uppercase hover:bg-white transition-all">
+                    Enter the Garage
+                </button>
+                <button class="px-10 py-4 border border-white/30 text-white text-sm font-bold tracking-[0.2em] uppercase hover:border-primary hover:text-primary transition-all">
+                    Our Heritage
+                </button>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+            <span class="material-symbols-outlined text-white/30">expand_more</span>
+        </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-6 py-24">
+        
+        <div class="mb-16 flex items-end justify-between border-b border-white/10 pb-8">
+            <div>
+                <span class="text-primary text-xs font-bold tracking-widest uppercase block mb-2">Collection</span>
+                <h2 class="font-serif text-5xl text-white">The Showroom</h2>
+            </div>
+            <div class="hidden md:block text-right">
+                <p class="text-white/40 text-sm max-w-xs">Curated selection of limited production vehicles and one-off engineering commissions.</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch">
+            
+            <a href="mclaren.html" class="md:col-span-8 group relative overflow-hidden glass-card rounded-lg flex flex-col h-[600px]">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" 
+                     style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCbCuR2QxEA3DncFLVdRzLc4HzpFdECYd8K0DgCDsQkXkAOdUH3x3U-5ew9GsTBpGCSor5MUDqiM73a8xBpZYNhJ9MpTS0UDwXIDSuuq-T-3uaq9zFRT6RAQ9G7kRJDqKCSbSnIbaEZ1USebb7u2HSN7_peZHmm3z-PmoD4DBnS6hEN6UM0JL-tTCaeeZgo53wav3qWYUsxt34XvowYU-EwoLBnO7lRvAfnOSPpHO6hYp_N0q0p9xn5ZNvBIJfMCx0dFQCPfikueFPH');">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-60"></div>
+                <div class="relative mt-auto p-10 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="px-3 py-1 bg-primary/20 text-primary text-[10px] font-bold tracking-widest uppercase border border-primary/20">Heritage</span>
+                        <span class="text-white/40 text-[10px] font-bold tracking-widest uppercase">1992-1998</span>
+                    </div>
+                    <h3 class="text-4xl font-serif text-white mb-6">McLaren F1</h3>
+                    <div class="flex gap-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                        <div>
+                            <p class="text-white/40 text-[10px] uppercase font-bold tracking-widest mb-1">Top Speed</p>
+                            <p class="text-primary font-bold text-xl">240.1 MPH</p>
+                        </div>
+                        <div>
+                            <p class="text-white/40 text-[10px] uppercase font-bold tracking-widest mb-1">0-60 MPH</p>
+                            <p class="text-white font-bold text-xl">3.2 SEC</p>
+                        </div>
+                        <div>
+                            <p class="text-white/40 text-[10px] uppercase font-bold tracking-widest mb-1">Engine</p>
+                            <p class="text-white font-bold text-xl">V12</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+
+             <!--Buggati Chivron  -->
+            <a href="buggati.html" class="md:col-span-4 group relative overflow-hidden glass-card rounded-lg flex flex-col h-[600px]">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110" 
+                     style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCEPqmYGyNzrld96CMAoN2S9hwxkLNT4yMg-vHdAzaewKZYEnLytadAoAaIcYIGHNNodlkjlv87n4a6r7BecMggh0h5Pz_Jk8CJVsfI85585Nne7DUqKHEE_z20fM54UDV5tKDQsoI14MaqElq7vMUg8uUzX1T1GGyAZbgk4TmJHE0pfSU9JTk-AWmSXyXqBUDEL3YdWT3_FnB2fI0uIWM_ui6OFJ2EBl4m8OjhdYu4hv9-kZGUCFoHxgz8TcJrEXCDGyNkcwWZ2oiS');">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+                <div class="relative mt-auto p-10 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                    <span class="px-3 py-1 bg-primary/20 text-primary text-[10px] font-bold tracking-widest uppercase mb-4 inline-block border border-primary/20">Modern Era</span>
+                    <h3 class="text-4xl font-serif text-white mb-6">Bugatti Chiron</h3>
+                    <div class="flex gap-8 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                         <div>
+                            <p class="text-white/40 text-[10px] uppercase font-bold tracking-widest mb-1">Top Speed</p>
+                            <p class="text-primary font-bold text-xl">261 MPH</p>
+                        </div>
+                         <div>
+                            <p class="text-white/40 text-[10px] uppercase font-bold tracking-widest mb-1">Engine</p>
+                            <p class="text-white font-bold text-xl">W16</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="ferrari.html" class="md:col-span-4 group relative overflow-hidden glass-card rounded-lg h-[500px]">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" 
+                     style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC5fypEMHOmhOOuhRnLljMipJrpJl4vRIPANXx109Ua5KI-aqZwv80p5IrLp62OkNXd9YQIyH9bngbN9VZv9mYfbRtW7-kTGijfOX2JQbKeFrbzILyEiCz9p7qk60ugjpeWq9mCd1-gu6mSiBtz9NOkjX0JKM0wpPfwp37KBjkQtfNDhl6HGBztS1MJW5LCcFUl6B4zjvER9BuP0Sh-8RzzmLddJQwVRRkljq7mQujVnDIAmRmcF3F5V_-dYUHUBz44QHwUTr3KUTcw');">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+                <div class="absolute bottom-0 left-0 p-8">
+                    <h3 class="text-3xl font-serif text-white mb-2">Ferrari F50</h3>
+                    <p class="text-white/40 text-xs font-semibold tracking-widest uppercase">Pure F1 DNA</p>
+                </div>
+            </a>
+
+            <a href="dodge.html" class="md:col-span-8 group relative overflow-hidden glass-card rounded-lg flex flex-col h-[500px]">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" 
+                     style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAa29pJpyDz_fl4EQGPQkTQA0ITzVkMSIvOr5QKrmzs9Frjwq1UewQVrwf0yO05eCpa9s3A8UOGnUQauQzkiB3U7iRsgIKdMzuQUdkEhYcStB61rS_9ByovWJRi5mvFY0TxDDGnLqy246qgC7fyF8ctpzxxpRy7BrE5QuGHOaCpDX5LPw_wPa9ghQy4CCiXHCXOGyP8E5uCr0NfUw6bwZWEWrqTxI7Pk989V-v4c_KXJyQBkGtNNM9s_gS2vw5Ak5s_vRGPrcvcGGDn');">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80"></div>
+                <div class="relative mt-auto p-10 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="px-3 py-1 bg-white/10 text-white text-[10px] font-bold tracking-widest uppercase border border-white/10">Restomod Classic</span>
+                        <span class="text-white/40 text-[10px] font-bold tracking-widest uppercase">1969 Execution</span>
+                    </div>
+                    <div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+                        <div>
+                            <h3 class="text-5xl font-serif text-white mb-2">Dodge Charger</h3>
+                            <p class="text-white/60 text-base tracking-wide max-w-lg">The definition of American Muscle, refined with bespoke precision for the modern era.</p>
+                        </div>
+                        <div class="flex gap-12 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 pb-2">
+                            <div>
+                                <p class="text-white/40 text-[10px] uppercase font-bold tracking-widest mb-1">Power</p>
+                                <p class="text-primary font-bold text-xl">807 HP</p>
+                            </div>
+                            <div>
+                                <p class="text-white/40 text-[10px] uppercase font-bold tracking-widest mb-1">0-60 MPH</p>
+                                <p class="text-white font-bold text-xl">3.4 SEC</p>
+                            </div>
+                            <div>
+                                <p class="text-white/40 text-[10px] uppercase font-bold tracking-widest mb-1">Engine</p>
+                                <p class="text-white font-bold text-xl">6.2L HEMI</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </a>
+            
+        </div>
+
+        <div class="mt-32">
+            <div class="mb-12">
+                <span class="text-primary text-xs font-bold tracking-widest uppercase block mb-2">The Archive</span>
+                <h2 class="font-serif text-5xl text-white">Engineering Marvels</h2>
+            </div>
+            
+            <div class="flex overflow-x-auto gap-8 pb-12 hide-scrollbar">
+                <div class="min-w-[400px] flex flex-col gap-6">
+                    <div class="aspect-video w-full glass-card overflow-hidden rounded-lg">
+                        <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" 
+                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1yl5IU0z4sw9CCM5G9OLawgK4XRAPJ4y7Kuyg4_uw078PLdoSSzl4_4exT4Rjb4FUCXzMEZwkf3G25KaLVrNUDcrd5zMMXNFeX_0EebgGtqrK3ZRMQEwZWM29AOQaGz99A0_Mwli23iKh8uzyZTVeR-Sdh31E3-mkfbofkBWUmdUufaD-I4H-398XvJYhcMrI0R3Jk44rILG0I8fifGDCCSLMrSgq0pH-1jZs3NmbAQxsNW625E_66VqpmggdhOoejuaZbpN-hNAt" alt="Engine Block" />
+                    </div>
+                    <div>
+                        <h4 class="text-primary text-xs font-bold tracking-[0.2em] uppercase mb-2">The Heart</h4>
+                        <h3 class="text-xl font-serif text-white mb-3">Naturally Aspirated V12</h3>
+                        <p class="text-white/50 text-sm leading-relaxed font-light">
+                            The pinnacle of internal combustion. A symphony of twelve cylinders working in perfect harmonic balance to deliver linear power.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="min-w-[400px] flex flex-col gap-6">
+                    <div class="aspect-video w-full glass-card overflow-hidden rounded-lg">
+                        <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" 
+                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyIxS6wRTxN7WYjzx28QlnYX5A_YTsBZwcNtZlc_trsfBlsiYWdO6_b6CeqOlaLpWa73zTYnC36774kl_RM4SAkTu6DFP_zn3wrbielENQ7urb5vpTsW_IAERCr4CrOMN7S6wv949PT8RV1_wBLfDmRwzTg0sjI3JsByNrlQWi8Wuz5tqfVi3Xsu9z1Eg-gwhSlGhq2ulzMYaLurYAd07QwdtZIQYmtG2lBDOdsGFla9Tc_D9YdsvHvz_yJa6PYrzezUAzEOE7JKXZ" alt="Carbon Fiber" />
+                    </div>
+                    <div>
+                        <h4 class="text-primary text-xs font-bold tracking-[0.2em] uppercase mb-2">The Skeleton</h4>
+                        <h3 class="text-xl font-serif text-white mb-3">Carbon Monocoque</h3>
+                        <p class="text-white/50 text-sm leading-relaxed font-light">
+                            Borrowing aerospace technology for the road. The rigid, lightweight tub provides unparalleled structural integrity.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="min-w-[400px] flex flex-col gap-6">
+                    <div class="aspect-video w-full glass-card overflow-hidden rounded-lg">
+                        <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" 
+                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTjCSbkPbRQVmOL975rZpZ02aEoDBe5kSUnLhqBi7c-7rRH62rm7erXoG-1fHVFj-enoeo8LyykCy0WTEfYg4DDrXw3pUYmROHRt9aOwoLVJ-RPqsnt20zsmaWObejw96LfI5gtGNbx4vh3bKN4ETlC0lQJuxHIS049D1mRJMsIdEOF0t0p6L733UkRM45onmNzRgUhLSZzbYrq3xQjjYli-qNY-GkRU3_Uhssbe7wuKl59imolHpVI6uDXk2TChirmlGiFmczbfaz" alt="Aero Details" />
+                    </div>
+                    <div>
+                        <h4 class="text-primary text-xs font-bold tracking-[0.2em] uppercase mb-2">The Fluidity</h4>
+                        <h3 class="text-xl font-serif text-white mb-3">Active Aerodynamics</h3>
+                        <p class="text-white/50 text-sm leading-relaxed font-light">
+                            Invisible hands pushing the car to the tarmac. Dynamic wings and flaps that respond to speed and braking.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-matte-black py-20 px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+            <div class="text-center md:text-left">
+                <h3 class="font-serif text-4xl text-white mb-4">Start Your Journey</h3>
+                <p class="text-white/40 max-w-sm">Join the elite circle of collectors and enthusiasts. Private showings available by appointment.</p>
+            </div>
+            <div class="flex flex-col md:flex-row gap-4 w-full md:w-auto">
+                <input class="bg-white/5 border border-white/10 px-8 py-4 text-white text-xs font-bold tracking-widest uppercase focus:border-primary focus:ring-0 outline-none w-full md:w-80" placeholder="Email Address" type="email" />
+                <button class="bg-primary text-black px-12 py-4 text-xs font-bold tracking-widest uppercase hover:bg-white transition-all whitespace-nowrap">Subscribe</button>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between text-white/30 text-[10px] font-bold tracking-[0.3em] uppercase">
+            <p>© 2024 STRIDE AUTOMOTIVE. ALL RIGHTS RESERVED.</p>
+            <div class="flex gap-8 mt-4 md:mt-0">
+                <a class="hover:text-primary transition-colors" href="#">Instagram</a>
+                <a class="hover:text-primary transition-colors" href="#">Youtube</a>
+                <a class="hover:text-primary transition-colors" href="#">Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <button class="fixed bottom-10 right-10 z-50 flex items-center gap-4 bg-primary text-black px-6 py-4 shadow-2xl hover:bg-white transition-all group overflow-hidden">
+        <span class="text-xs font-bold tracking-[0.2em] uppercase whitespace-nowrap">Enquire Now</span>
+        <div class="w-8 h-8 flex items-center justify-center">
+            <span class="material-symbols-outlined text-black group-hover:translate-x-1 transition-transform">arrow_forward_ios</span>
+        </div>
+    </button> -->
+</body>
+</html>

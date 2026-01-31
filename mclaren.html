@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>McLaren F1 | Stride Digital Museum</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#eec02b",
+                        "background-light": "#f8f8f6",
+                        "background-dark": "#121212",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"],
+                        "cta": ["Montserrat", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-header {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            background-color: rgba(18, 18, 18, 0.8);
+            border-bottom: 1px solid rgba(238, 192, 43, 0.1);
+        }
+        .matte-card {
+            background-color: #1a1a1a;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .platinum-gradient {
+            background: linear-gradient(90deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.05) 100%);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-white selection:bg-primary selection:text-background-dark">
+<!-- Sticky Glass-morphism Header -->
+<header class="fixed top-0 left-0 right-0 z-50 glass-header">
+<div class="max-w-[1280px] mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-8 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold tracking-tighter uppercase">Stride</h2>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-xs uppercase tracking-widest font-medium hover:text-primary transition-colors" href="#">Museum</a>
+<a class="text-xs uppercase tracking-widest font-medium hover:text-primary transition-colors" href="#">Marketplace</a>
+<a class="text-xs uppercase tracking-widest font-medium hover:text-primary transition-colors" href="#">Provenance</a>
+<a class="text-xs uppercase tracking-widest font-medium hover:text-primary transition-colors" href="#">Heritage</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="p-2 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="px-5 py-2 rounded bg-primary text-background-dark text-xs font-bold uppercase tracking-widest hover:brightness-110 transition-all">
+                    Account
+                </button>
+</div>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="min-h-[80vh] flex flex-col md:flex-row items-stretch">
+<!-- Left: Image -->
+<div class="w-full md:w-1/2 relative bg-[#1a1a1a] flex items-center justify-center p-12">
+<div class="w-full h-full bg-center bg-no-repeat bg-contain" data-alt="Side profile of a silver McLaren F1 supercar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBnLSQMnVZpL4u_LrPcgYaGeDALvx20tNIsnTmzZDzWYeugXGI1bjsbQ1SvhS_07kgVtIOtMxshHJyz3hJpEbIrCkQnMApdrDlb7EBAJ8ngO-W_3va6FTQ31r9ZjNhMq3HviYTxbomI9l0oYFLtPfketGtywuIy58tQaa4rpoxP7L3CEqIvL40KT3ecZcOrtRsQqdEF1bgUEQcoUVSny3YmitRe4qB4tdgOyVi-JlI9YKusBQF_DlQrO05uitrwsyIy8sNjv0edK1z0");'>
+</div>
+<div class="absolute bottom-10 left-10 text-[10rem] font-black text-white/5 select-none pointer-events-none">
+                    F1
+                </div>
+</div>
+<!-- Right: Heritage -->
+<div class="w-full md:w-1/2 flex flex-col justify-center px-10 py-20 md:px-24 bg-background-dark">
+<div class="max-w-md">
+<span class="text-primary text-xs font-bold tracking-[0.3em] uppercase mb-4 block">Legendary Heritage</span>
+<h1 class="text-white text-6xl md:text-8xl font-serif leading-tight mb-8">
+                        McLaren F1
+                    </h1>
+<p class="text-gray-400 text-lg leading-relaxed font-light">
+                        Gordon Murray's vision of the ultimate road car. A masterpiece of engineering, featuring a revolutionary carbon-fiber monocoque and a central driving position that remains the gold standard of automotive purity. It wasn't just built to be fast; it was built to be perfect.
+                    </p>
+<div class="mt-12 flex items-center gap-6">
+<div class="h-px w-12 bg-primary/40"></div>
+<span class="text-xs uppercase tracking-widest text-primary/80">Production: 1992—1998</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Spec Bar -->
+<div class="w-full platinum-gradient border-y border-white/10">
+<div class="max-w-[1280px] mx-auto grid grid-cols-2 md:grid-cols-4 divide-x divide-white/10">
+<div class="p-8 flex flex-col items-center justify-center gap-1 group cursor-default">
+<span class="text-[10px] uppercase tracking-[0.2em] text-primary/60 font-bold group-hover:text-primary transition-colors">Top Speed</span>
+<span class="text-2xl font-light tracking-tight group-hover:scale-105 transition-transform">240.1 MPH</span>
+</div>
+<div class="p-8 flex flex-col items-center justify-center gap-1 group cursor-default">
+<span class="text-[10px] uppercase tracking-[0.2em] text-primary/60 font-bold group-hover:text-primary transition-colors">0-60 MPH</span>
+<span class="text-2xl font-light tracking-tight group-hover:scale-105 transition-transform">3.2 SEC</span>
+</div>
+<div class="p-8 flex flex-col items-center justify-center gap-1 group cursor-default">
+<span class="text-[10px] uppercase tracking-[0.2em] text-primary/60 font-bold group-hover:text-primary transition-colors">Engine</span>
+<span class="text-2xl font-light tracking-tight group-hover:scale-105 transition-transform">6.1L V12</span>
+</div>
+<div class="p-8 flex flex-col items-center justify-center gap-1 group cursor-default">
+<span class="text-[10px] uppercase tracking-[0.2em] text-primary/60 font-bold group-hover:text-primary transition-colors">Layout</span>
+<span class="text-2xl font-light tracking-tight group-hover:scale-105 transition-transform">3-SEAT CENTRAL</span>
+</div>
+</div>
+</div>
+<!-- Engineering Sections -->
+<section class="max-w-[1280px] mx-auto py-24 px-6 space-y-32">
+<!-- Story Block 1 -->
+<div class="flex flex-col md:flex-row items-center gap-16">
+<div class="w-full md:w-1/2 aspect-[4/3] rounded-lg overflow-hidden matte-card">
+<div class="w-full h-full bg-center bg-cover hover:scale-105 transition-transform duration-700" data-alt="Detailed view of the gold-lined engine bay of a McLaren F1" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCM7xv4joblLlw16XKCC8DzOkpugytRQ8SnjMgxI1Tk0B7WVHr2IRIkVcstocZN5TlfGMQ8T72ELHbp1VCG-uyQPHsIcpcfoGKGDLCLEqP7is-q0WiBBxVueWeZ7xtO7JmKCNySqHA7MxH1njzJmAKafi9BhCI30Qyp9ZmRFrbgHeJFziZdbSyzl0FqUqeZ0CM90aVAl-bdr3jhWHwtwc8eOv7NAnPQQKr8a70c95uZUrJOCB5evPsDfc0azwEUzvP8r61nqg_QAYGI");'>
+</div>
+</div>
+<div class="w-full md:w-1/2 space-y-6">
+<h2 class="text-4xl font-serif text-white">The Gold Heart</h2>
+<p class="text-gray-400 leading-relaxed text-lg">
+                        The engine bay is lined with 24kt gold foil—the most efficient heat reflector known to man. This wasn't for ostentation; it was a pure engineering solution to protect the carbon fiber body from the intense heat generated by the BMW-sourced V12 powerhouse.
+                    </p>
+<div class="pt-4">
+<span class="text-xs font-bold uppercase tracking-widest text-primary border-b border-primary/30 pb-1">Engineering Excellence</span>
+</div>
+</div>
+</div>
+<!-- Story Block 2 -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-16">
+<div class="w-full md:w-1/2 aspect-[4/3] rounded-lg overflow-hidden matte-card">
+<div class="w-full h-full bg-center bg-cover hover:scale-105 transition-transform duration-700" data-alt="Exposed carbon fiber monocoque chassis structure" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD6fERStJQbF_mbJ6pM5A3K3j4o_MBhpHrwzIcEPNQMvgllKBzKWqHUTduWIyJyzg2sVVfCxbV-SnfACTVYk5Uc0ZQ0xwklEtTYJhrE8JKxFOFOa9w3y7Bx5fHHNe6hX4c9VuJQtLwKkCa7DiRBYRUzfZsao3aEpwLL7qJOxDCvhCk1QoBBAeIui5ZvG7w75pBCKgqnZGdCrwSQizXEov9LYjRg3DaheS5_lbO3cyWjNv2tPrn-Cr6qTBUTY2eRHqf2rIbmL6tceXKS");'>
+</div>
+</div>
+<div class="w-full md:w-1/2 space-y-6">
+<h2 class="text-4xl font-serif text-white">Carbon Monocoque</h2>
+<p class="text-gray-400 leading-relaxed text-lg">
+                        The F1 was the first production car to use a complete carbon fiber reinforced plastic (CFRP) monocoque chassis structure. This revolution in materials science provided unprecedented rigidity while keeping the total weight under 1,140kg.
+                    </p>
+<div class="pt-4">
+<span class="text-xs font-bold uppercase tracking-widest text-primary border-b border-primary/30 pb-1">First of its Kind</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Section -->
+<section class="bg-[#0a0a0a] py-24 border-y border-white/5">
+<div class="max-w-[1280px] mx-auto px-6">
+<div class="flex justify-between items-end mb-12">
+<div>
+<span class="text-primary text-xs font-bold tracking-widest uppercase mb-2 block">Visual Catalog</span>
+<h2 class="text-3xl font-serif">Refined Details</h2>
+</div>
+<a class="text-xs uppercase tracking-widest text-gray-500 hover:text-white transition-colors" href="#">View All Gallery</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="group relative aspect-square overflow-hidden rounded-lg bg-background-dark border border-white/5">
+<div class="w-full h-full bg-center bg-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500" data-alt="Interior shot focusing on the central steering wheel and driver seat" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBtDXgi0pjFvHeiWyPyNv3rX45qEjcdm244TJrOSd_eD1i0rDnLl8Yf_TGwhiRXGKSOjocIgKYcYEfN4TTCFSsTMVfMxfTZyvxfbuDnIzBIaiQfDpRUf8U1aBqD5qihszisT_gH9goJruDreR-fzcrng46jG3OPFglxw4-tzjfdhOEJJR_hzsl2oktqKdoTl7Mcdg-A13Jku3lUKPSqCsDz4qZ6zfAPbF7nNdXWIJC6gvLMAROt2n4j36dbvg0z_m4D68c06fXyJXYx");'></div>
+<div class="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+<span class="text-[10px] uppercase tracking-widest text-primary font-bold">The Cockpit</span>
+</div>
+</div>
+<div class="group relative aspect-square overflow-hidden rounded-lg bg-background-dark border border-white/5">
+<div class="w-full h-full bg-center bg-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500" data-alt="Close up of the minimalist manual gear shifter" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBXv24pNF__uQ0ASCQ30qPcY7cFTCNxLd961otYFbN6-4tPk-QlNVEs4PoiftShNCrFt5zRBOGzF7GubWjK0kk8xpgKxZ0YL9b-2T31K5mFJAvR0aMxOt4vgZNe14VW-08rIhATFRRgg9p8kDELmBquyCm9pStiWTUguJEhf657kpVI1tPT4Jjap96RJoAWpM0IcauwEtFjNC9iFqYfhagi-RZ84YbEA-BFF2xK8vPzrDAWSm0-wx8cxb1CBKDb7-aakWho7gHVMhDB");'></div>
+<div class="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+<span class="text-[10px] uppercase tracking-widest text-primary font-bold">Tactile Precision</span>
+</div>
+</div>
+<div class="group relative aspect-square overflow-hidden rounded-lg bg-background-dark border border-white/5">
+<div class="w-full h-full bg-center bg-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500" data-alt="Iconic butterfly doors of the McLaren F1 open" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB7Io5ZXXFw90rDHuem9edBSI-dAoq5ouT8o-NnnzFHSgn5tkjehKRAbcRa554feDDrwJDTmZV_YQDzLsyflhtlGaVv9XSF4jdLF5tXb0pMyk8tOHBm31dZSh2RltmLknq4eIY1tp_g_YTCp6g2leQvfcJ64mRVvamnLzIsKvNDqRDqgTXEP0AJze0chc_1Wu55eVEqO3_T9-wm4JQiTc5nBvD5VZNUePydonkWtRzhKqW1Uh73dw3vPeSPLVylySPTZr36sEodnhcV");'></div>
+<div class="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+<span class="text-[10px] uppercase tracking-widest text-primary font-bold">Kinetic Art</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 px-6">
+<div class="max-w-[800px] mx-auto text-center space-y-10">
+<div class="inline-block px-4 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary text-[10px] uppercase tracking-[0.2em] font-bold">
+                    Exclusive Availability
+                </div>
+<h2 class="text-4xl md:text-5xl font-serif leading-tight">Secure your place in automotive history.</h2>
+<p class="text-gray-400 text-lg">
+                    Private acquisition opportunities for the McLaren F1 are managed by Stride's High-Value Assets division. Contact our concierge to begin the provenance verification process.
+                </p>
+<button class="font-cta bg-primary text-background-dark px-12 py-5 rounded-lg text-sm font-bold uppercase tracking-widest hover:brightness-110 hover:shadow-[0_0_30px_rgba(238,192,43,0.3)] transition-all transform hover:-translate-y-1">
+                    Enquire for Acquisition
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0a0a0a] border-t border-white/5 pt-20 pb-10">
+<div class="max-w-[1280px] mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-20">
+<div class="space-y-6">
+<div class="flex items-center gap-3">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold tracking-tighter uppercase">Stride</h2>
+</div>
+<p class="text-gray-500 text-sm max-w-xs leading-relaxed">
+                        The world's premier digital sanctuary for automotive heritage and high-fidelity collection management.
+                    </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-16">
+<div class="space-y-4">
+<h4 class="text-[10px] uppercase tracking-widest font-bold text-white">Platform</h4>
+<nav class="flex flex-col gap-2">
+<a class="text-sm text-gray-500 hover:text-primary transition-colors" href="#">Museum</a>
+<a class="text-sm text-gray-500 hover:text-primary transition-colors" href="#">Curations</a>
+<a class="text-sm text-gray-500 hover:text-primary transition-colors" href="#">Valuations</a>
+</nav>
+</div>
+<div class="space-y-4">
+<h4 class="text-[10px] uppercase tracking-widest font-bold text-white">Support</h4>
+<nav class="flex flex-col gap-2">
+<a class="text-sm text-gray-500 hover:text-primary transition-colors" href="#">Privacy</a>
+<a class="text-sm text-gray-500 hover:text-primary transition-colors" href="#">Provenance Research</a>
+<a class="text-sm text-gray-500 hover:text-primary transition-colors" href="#">Terms of Sale</a>
+</nav>
+</div>
+<div class="space-y-4">
+<h4 class="text-[10px] uppercase tracking-widest font-bold text-white">Connect</h4>
+<div class="flex gap-4">
+<a class="p-2 bg-white/5 rounded hover:bg-white/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="p-2 bg-white/5 rounded hover:bg-white/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">alternate_email</span>
+</a>
+<a class="p-2 bg-white/5 rounded hover:bg-white/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">photo_camera</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-[10px] text-gray-600 uppercase tracking-widest">© 2024 Stride Digital. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="text-[10px] text-gray-600 uppercase tracking-widest hover:text-white transition-colors" href="#">Legal</a>
+<a class="text-[10px] text-gray-600 uppercase tracking-widest hover:text-white transition-colors" href="#">Cookie Policy</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
