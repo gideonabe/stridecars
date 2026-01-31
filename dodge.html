@@ -1,24 +1,27 @@
 <!DOCTYPE html>
+<html class="dark" lang="en">
 
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Dodge Charger "Midnight" Restomod | Stride Luxury Automotive</title>
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Dodge Charger "Midnight" Restomod | Stride Luxury Automotive</title>
+    <link rel="icon" type="image/x-icon" href="sport-car.png">
 
-<link rel="icon" type="image/x-icon" href="sport-car.png">
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#e6a219",
+                        "primary": "#e6a219", // Gold/Amber
                         "background-light": "#f8f7f6",
-                        "background-dark": "#0a0a0a", // Deepened for 'Quiet Luxury' feel
+                        "background-dark": "#0a0a0a", // Deep Black
                     },
                     fontFamily: {
                         "display": ["Manrope", "sans-serif"]
@@ -33,224 +36,261 @@
             },
         }
     </script>
-<style>
+
+    <style>
         body {
             font-family: 'Manrope', sans-serif;
             -webkit-font-smoothing: antialiased;
         }
+
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
     </style>
 </head>
+
 <body class="bg-background-light dark:bg-background-dark text-white selection:bg-primary selection:text-background-dark">
-<div class="relative flex min-h-screen flex-col overflow-x-hidden">
-<!-- Top Navigation Bar -->
-<header class="sticky top-0 z-50 w-full border-b border-white/10 bg-background-dark/80 backdrop-blur-md px-6 md:px-20 py-4">
-  <div class="mx-auto flex max-w-[1200px] items-center justify-between">
-    <div class="flex items-center gap-10">
-      <a href="index.html" class="flex items-center gap-3 text-primary">
-        <span class="material-symbols-outlined text-3xl">token</span>
-        <h1 class="text-xl font-extrabold tracking-tighter text-white">STRIDE</h1>
-      </a>
-      <nav class="hidden lg:flex items-center gap-8">
-        <a class="text-xs font-semibold uppercase tracking-widest text-white/60 hover:text-primary transition-colors" href="#">Museum</a>
-        <a class="text-xs font-semibold uppercase tracking-widest text-white/60 hover:text-primary transition-colors" href="#">Marketplace</a>
-        <a class="text-xs font-semibold uppercase tracking-widest text-white/60 hover:text-primary transition-colors" href="#">Services</a>
-        <a class="text-xs font-semibold uppercase tracking-widest text-white/60 hover:text-primary transition-colors" href="#">Journal</a>
-      </nav>
-    </div>
-    <div class="flex items-center gap-6">
-    <div class="hidden md:flex items-center bg-white/5 rounded-lg px-3 py-1.5 border border-white/10">
-    <span class="material-symbols-outlined text-white/40 text-sm">search</span>
-    <input class="bg-transparent border-none focus:ring-0 text-sm placeholder:text-white/20 w-40" placeholder="Search archive..." type="text"/>
-    </div>
-    <button class="hidden sm:flex items-center justify-center rounded-lg h-10 px-6 bg-primary text-background-dark text-xs font-bold uppercase tracking-widest hover:bg-primary/90 transition-all">
-                            Account
-                        </button>
-    <div class="h-10 w-10 rounded-full border border-white/20 bg-cover bg-center" data-alt="User profile avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBQ082H1yRY8ESTra3dUpvJ60wXfwX9tLG_yMO26RS9KbYzRaiIAbf55hXKslofcedCmWnzCjTHBmCQ6_G7vVPaaAIlcVrXf09CvLqaS-c5xlBXPK3l0BKdFp3pN_XKdnax2jJeehRBSf0XuRAR7g_lC2UCCdHcxSytdUfIfXuuD7_jo-yuhWHzRLfzyr2PF-k8EXzNxfbb6inG-38tcu7jVqLwTMRfonhPLM0VK903i0ctaJAY_kXhHovf20gkI6tH2TAD2z3Kbtum");'></div>
-    </div>
-  </div>
-</header>
-<main class="flex-1">
-<!-- Hero Section -->
-<section class="relative w-full px-6 md:px-20 pt-10">
-<div class="mx-auto max-w-[1200px]">
-<div class="group relative overflow-hidden rounded-xl bg-[#111]">
-<div class="aspect-[21/9] w-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Matte black 1969 Dodge Charger under cinematic lighting" style='background-image: linear-gradient(to top, rgba(10,10,10,0.9) 0%, rgba(10,10,10,0) 50%), url("https://wallpapercave.com/wp/wp12346591.jpg");'>
-</div>
-<div class="absolute bottom-0 left-0 p-8 md:p-12">
-<div class="flex items-center gap-2 mb-4">
-<span class="bg-primary/20 text-primary text-[10px] font-bold uppercase tracking-[0.2em] px-2 py-1 rounded">Bespoke Build</span>
-<span class="text-white/40 text-[10px] font-bold uppercase tracking-[0.2em]">Variant 2 of 2</span>
-</div>
-<h2 class="text-4xl md:text-6xl font-light tracking-tight text-white mb-2">1969 Dodge Charger</h2>
-<h3 class="text-xl md:text-2xl font-bold tracking-widest text-primary uppercase italic">"Midnight" Restomod</h3>
-</div>
-</div>
-</div>
-</section>
-<!-- Meta Stats Section -->
-<section class="w-full px-6 md:px-20 py-12">
-<div class="mx-auto max-w-[1200px]">
-<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-<div class="group flex flex-col gap-2 rounded-xl p-8 border border-white/5 bg-white/[0.02] hover:bg-white/[0.04] transition-all">
-<div class="flex items-center gap-2 text-white/40 mb-1">
-<span class="material-symbols-outlined text-sm">bolt</span>
-<p class="text-[10px] font-bold uppercase tracking-widest">Horsepower</p>
-</div>
-<p class="text-3xl font-light tracking-tighter text-white">1,000 <span class="text-sm font-medium text-white/40">HP</span></p>
-<div class="h-0.5 w-0 bg-primary group-hover:w-full transition-all duration-500"></div>
-</div>
-<div class="group flex flex-col gap-2 rounded-xl p-8 border border-white/5 bg-white/[0.02] hover:bg-white/[0.04] transition-all">
-<div class="flex items-center gap-2 text-white/40 mb-1">
-<span class="material-symbols-outlined text-sm">timer</span>
-<p class="text-[10px] font-bold uppercase tracking-widest">0-60 MPH</p>
-</div>
-<p class="text-3xl font-light tracking-tighter text-white">3.2 <span class="text-sm font-medium text-white/40">SEC</span></p>
-<div class="h-0.5 w-0 bg-primary group-hover:w-full transition-all duration-500"></div>
-</div>
-<div class="group flex flex-col gap-2 rounded-xl p-8 border border-white/5 bg-white/[0.02] hover:bg-white/[0.04] transition-all">
-<div class="flex items-center gap-2 text-white/40 mb-1">
-<span class="material-symbols-outlined text-sm">settings_input_component</span>
-<p class="text-[10px] font-bold uppercase tracking-widest">Torque</p>
-</div>
-<p class="text-3xl font-light tracking-tighter text-white">950 <span class="text-sm font-medium text-white/40">LB-FT</span></p>
-<div class="h-0.5 w-0 bg-primary group-hover:w-full transition-all duration-500"></div>
-</div>
-<div class="group flex flex-col gap-2 rounded-xl p-8 border border-white/5 bg-white/[0.02] hover:bg-white/[0.04] transition-all">
-<div class="flex items-center gap-2 text-white/40 mb-1">
-<span class="material-symbols-outlined text-sm">speed</span>
-<p class="text-[10px] font-bold uppercase tracking-widest">Top Speed</p>
-</div>
-<p class="text-3xl font-light tracking-tighter text-white">200+ <span class="text-sm font-medium text-white/40">MPH</span></p>
-<div class="h-0.5 w-0 bg-primary group-hover:w-full transition-all duration-500"></div>
-</div>
-</div>
-</div>
-</section>
-<!-- Narrative Section -->
-<section class="w-full px-6 md:px-20 py-16 bg-white/[0.01]">
-<div class="mx-auto max-w-[1200px] flex flex-col md:flex-row gap-16 items-start">
-<div class="md:w-1/2">
-<h4 class="text-primary text-[10px] font-bold uppercase tracking-[0.3em] mb-6">The Restomod Philosophy</h4>
-<h3 class="text-3xl md:text-4xl font-light leading-tight mb-8">Engineering a legend for the <span class="italic font-normal">modern era.</span></h3>
-<p class="text-white/60 leading-relaxed text-lg mb-6">
+    <div class="relative flex min-h-screen flex-col overflow-x-hidden">
+        
+        <header class="sticky top-0 z-50 w-full border-b border-white/10 bg-background-dark/80 backdrop-blur-md px-6 md:px-20 py-4">
+            <div class="mx-auto flex max-w-[1200px] items-center justify-between">
+                
+                <div class="flex items-center gap-10">
+                    <a href="index.html" class="flex items-center gap-3 text-primary">
+                        <span class="material-symbols-outlined text-3xl">token</span>
+                        <h1 class="text-xl font-extrabold tracking-tighter text-white">STRIDE</h1>
+                    </a>
+                    <nav class="hidden lg:flex items-center gap-8">
+                        <a class="text-xs font-semibold uppercase tracking-widest text-white/60 hover:text-primary transition-colors" href="#">Museum</a>
+                        <a class="text-xs font-semibold uppercase tracking-widest text-white/60 hover:text-primary transition-colors" href="#">Marketplace</a>
+                        <a class="text-xs font-semibold uppercase tracking-widest text-white/60 hover:text-primary transition-colors" href="#">Services</a>
+                        <a class="text-xs font-semibold uppercase tracking-widest text-white/60 hover:text-primary transition-colors" href="#">Journal</a>
+                    </nav>
+                </div>
+
+                <div class="flex items-center gap-6">
+                    <div class="hidden md:flex items-center bg-white/5 rounded-lg px-3 py-1.5 border border-white/10">
+                        <span class="material-symbols-outlined text-white/40 text-sm">search</span>
+                        <input class="bg-transparent border-none focus:ring-0 text-sm placeholder:text-white/20 w-40" placeholder="Search archive..." type="text" />
+                    </div>
+                    <button class="hidden sm:flex items-center justify-center rounded-lg h-10 px-6 bg-primary text-background-dark text-xs font-bold uppercase tracking-widest hover:bg-primary/90 transition-all">
+                        Account
+                    </button>
+                    <div class="h-10 w-10 rounded-full border border-white/20 bg-cover bg-center" 
+                         data-alt="User profile avatar" 
+                         style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBQ082H1yRY8ESTra3dUpvJ60wXfwX9tLG_yMO26RS9KbYzRaiIAbf55hXKslofcedCmWnzCjTHBmCQ6_G7vVPaaAIlcVrXf09CvLqaS-c5xlBXPK3l0BKdFp3pN_XKdnax2jJeehRBSf0XuRAR7g_lC2UCCdHcxSytdUfIfXuuD7_jo-yuhWHzRLfzyr2PF-k8EXzNxfbb6inG-38tcu7jVqLwTMRfonhPLM0VK903i0ctaJAY_kXhHovf20gkI6tH2TAD2z3Kbtum");'>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-1">
+            
+            <section class="relative w-full px-6 md:px-20 pt-10">
+                <div class="mx-auto max-w-[1200px]">
+                    <div class="group relative overflow-hidden rounded-xl bg-[#111]">
+                        <div class="aspect-[21/9] w-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" 
+                             data-alt="Matte black 1969 Dodge Charger under cinematic lighting" 
+                             style='background-image: linear-gradient(to top, rgba(10,10,10,0.9) 0%, rgba(10,10,10,0) 50%), url("https://wallpapercave.com/wp/wp12346591.jpg");'>
+                        </div>
+                        
+                        <div class="absolute bottom-0 left-0 p-8 md:p-12">
+                            <div class="flex items-center gap-2 mb-4">
+                                <span class="bg-primary/20 text-primary text-[10px] font-bold uppercase tracking-[0.2em] px-2 py-1 rounded">Bespoke Build</span>
+                                <span class="text-white/40 text-[10px] font-bold uppercase tracking-[0.2em]">Variant 2 of 2</span>
+                            </div>
+                            <h2 class="text-4xl md:text-6xl font-light tracking-tight text-white mb-2">1969 Dodge Charger</h2>
+                            <h3 class="text-xl md:text-2xl font-bold tracking-widest text-primary uppercase italic">"Midnight" Restomod</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="w-full px-6 md:px-20 py-12">
+                <div class="mx-auto max-w-[1200px]">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="group flex flex-col gap-2 rounded-xl p-8 border border-white/5 bg-white/[0.02] hover:bg-white/[0.04] transition-all">
+                            <div class="flex items-center gap-2 text-white/40 mb-1">
+                                <span class="material-symbols-outlined text-sm">bolt</span>
+                                <p class="text-[10px] font-bold uppercase tracking-widest">Horsepower</p>
+                            </div>
+                            <p class="text-3xl font-light tracking-tighter text-white">1,000 <span class="text-sm font-medium text-white/40">HP</span></p>
+                            <div class="h-0.5 w-0 bg-primary group-hover:w-full transition-all duration-500"></div>
+                        </div>
+                        
+                        <div class="group flex flex-col gap-2 rounded-xl p-8 border border-white/5 bg-white/[0.02] hover:bg-white/[0.04] transition-all">
+                            <div class="flex items-center gap-2 text-white/40 mb-1">
+                                <span class="material-symbols-outlined text-sm">timer</span>
+                                <p class="text-[10px] font-bold uppercase tracking-widest">0-60 MPH</p>
+                            </div>
+                            <p class="text-3xl font-light tracking-tighter text-white">3.2 <span class="text-sm font-medium text-white/40">SEC</span></p>
+                            <div class="h-0.5 w-0 bg-primary group-hover:w-full transition-all duration-500"></div>
+                        </div>
+                        
+                        <div class="group flex flex-col gap-2 rounded-xl p-8 border border-white/5 bg-white/[0.02] hover:bg-white/[0.04] transition-all">
+                            <div class="flex items-center gap-2 text-white/40 mb-1">
+                                <span class="material-symbols-outlined text-sm">settings_input_component</span>
+                                <p class="text-[10px] font-bold uppercase tracking-widest">Torque</p>
+                            </div>
+                            <p class="text-3xl font-light tracking-tighter text-white">950 <span class="text-sm font-medium text-white/40">LB-FT</span></p>
+                            <div class="h-0.5 w-0 bg-primary group-hover:w-full transition-all duration-500"></div>
+                        </div>
+                        
+                        <div class="group flex flex-col gap-2 rounded-xl p-8 border border-white/5 bg-white/[0.02] hover:bg-white/[0.04] transition-all">
+                            <div class="flex items-center gap-2 text-white/40 mb-1">
+                                <span class="material-symbols-outlined text-sm">speed</span>
+                                <p class="text-[10px] font-bold uppercase tracking-widest">Top Speed</p>
+                            </div>
+                            <p class="text-3xl font-light tracking-tighter text-white">200+ <span class="text-sm font-medium text-white/40">MPH</span></p>
+                            <div class="h-0.5 w-0 bg-primary group-hover:w-full transition-all duration-500"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="w-full px-6 md:px-20 py-16 bg-white/[0.01]">
+                <div class="mx-auto max-w-[1200px] flex flex-col md:flex-row gap-16 items-start">
+                    
+                    <div class="md:w-1/2">
+                        <h4 class="text-primary text-[10px] font-bold uppercase tracking-[0.3em] mb-6">The Restomod Philosophy</h4>
+                        <h3 class="text-3xl md:text-4xl font-light leading-tight mb-8">Engineering a legend for the <span class="italic font-normal">modern era.</span></h3>
+                        <p class="text-white/60 leading-relaxed text-lg mb-6">
                             The "Midnight" project was conceived with a singular goal: to preserve the aggressive silhouette of the 1969 Dodge Charger while infusing it with the technical prowess of a modern hypercar.
                         </p>
-<p class="text-white/60 leading-relaxed text-lg">
+                        <p class="text-white/60 leading-relaxed text-lg">
                             Underneath the bespoke matte carbon-fiber bodywork lies a Hellephant Crate engine producing a staggering 1,000 HP. Every component, from the Brembo carbon-ceramic brakes to the custom multilink suspension, has been tuned for refined performance—a true embodiment of "Quiet Luxury" in a muscle car shell.
                         </p>
-</div>
-<div class="md:w-1/2 grid grid-cols-2 gap-4">
-<div class="aspect-square rounded-xl bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-500" data-alt="Detailed macro of the Hellephant engine" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBevbGwOhl1DxSn-cQrB8o-3_hArYYmOwNh4QDeQnnAj5MFbg_f3EQSyNLoeLAIZo6zSbo7fy5OIDyfuOWAv4MwbxuVHdjv5hViLZOTaAeN7r6d1-LjtNJnQx8_H9wAerrRu8gAs_1BelfQaiXC7_rGglgei0Xas6pQZNzwa4mwaFQDY_gU-P_03yeqjVlFUQsN25xrCZZjZ8AI9s1p5YQW-XBnujiJKzCTFBvDB1N8hzFBJf0Q73nq-6KohOQDxA8_WWuhP55ZSY1T");'></div>
-<div class="aspect-square rounded-xl bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-500" data-alt="Carbon ceramic brake assembly detail" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAAXn-fg8_v8TjI3GghgjYNICipmjCt-JG5IcMtdC2cAMIB7IjNm_lmgN93tD_megskmodsKl6_Yxc42NMejii4nlpU1hq5Fv6x4DGZ2DjNppMcwodYUZhNugUjcDnqXFF6lVsuSBXVqJGLWT1L5tYgJ3YSTXv4kMKCfJbC1gKRj5wHshj2yOT3SVEeOMGnTLUu_lK0SVYUf4T4pbh95Nz67Ji65R0hwWT2vXyk-O9mAJ6vqmWags3DoTvf0DKfLvL_pnkFN_BeAuH3");'></div>
-<div class="col-span-2 aspect-[2/1] rounded-xl bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-500" data-alt="Profile shot of the matte black charger" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCv8g_3_wr74V1pnYhDYCISxFMhnottZVPJSEJKAPkSUimh7ObkpBob9b1dGUeZj9edG4vWDBE6m4aCuG4kkKSCWGDknZx5wQGXKh4iaPOuo1xJ3xXd8zQphKvqnH2PZ-dXMsgFW4D46CW4uY9cBm0BQXs9ahRJeNmMil80ee17sw_TO0ofYZ0G9NnaMowBADMkPRd_gVvs_J7CMRqlKyvgZ-iiQuNuftZYfuGQ3PK8oh6C8D6sVVdQulsdwOnHG3tz-2Zx49nfO6OW");'></div>
-</div>
-</div>
-</section>
-<!-- Interior Gallery Section -->
-<section class="w-full px-6 md:px-20 py-24">
-<div class="mx-auto max-w-[1200px]">
-<div class="flex items-end justify-between mb-12 border-b border-white/10 pb-6">
-<div>
-<h4 class="text-primary text-[10px] font-bold uppercase tracking-[0.3em] mb-2">Interior Mastery</h4>
-<h2 class="text-3xl font-light">Bespoke Craftsmanship</h2>
-</div>
-<div class="flex gap-4">
-<button class="size-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors">
-<span class="material-symbols-outlined">arrow_back</span>
-</button>
-<button class="size-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors">
-<span class="material-symbols-outlined">arrow_forward</span>
-</button>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<div class="space-y-6">
-<div class="aspect-[4/5] rounded-xl overflow-hidden bg-white/5">
-<div class="h-full w-full bg-cover bg-center" data-alt="Hand-stitched Italian Nappa leather interior detail" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDVK6TIku3kNDH7tUg98zz5DWrtOZULZYYinH4wv7qcCxLJQeNpp9wT6MHkpLtV4CrP4HkPB6G_Bkur3jT4REkcq28CNJHWvhK3F4fqKrXMustwJUst6MBicv2DNIhoW4QG8005y9p3XX5OIdqGLP1z4Qpp8NqHme5X5mxuuriYYiZpSt7Hrv-ugQt6VVVn4RrlNG8WSTCDu9YTM_zEbTPM_fFvJhsfOZwaEOky7zxmDNQJncIwsbLGdkQ4lM_OSizWmh1kBqv89j-S");'></div>
-</div>
-<div>
-<h5 class="text-lg font-semibold mb-2">Italian Nappa Leather</h5>
-<p class="text-sm text-white/40">Hand-stitched deep espresso leather with contrast gold threading.</p>
-</div>
-</div>
-<div class="space-y-6">
-<div class="aspect-[4/5] rounded-xl overflow-hidden bg-white/5">
-<div class="h-full w-full bg-cover bg-center" data-alt="Modern digital gauge cluster integrated into classic dash" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB6GJmzM7V39QCllOQEl3UnkSxKDYfZgd48sKDHtEUW7wl5OfemQ0mwwPkBVg-XSI67MRCuzeksPsW4NWESjTPJBh_No3Zfiep9bJJldw15YN89pYFwojyI4rLwLJR4ZHM2YlCEpGILVr0iwlkdgDCM_pj4kcyrclAiuEJbXTG3k8nVYh-7IKnuKTToCfFTbR4X1I7TrQzrmXM-HpbYHOF1UZPkw8b1C2GHHqSPUUTkso2hqyFfPUtI7Ls1GUrHX2_vokx7Jo5Nez1U");'></div>
-</div>
-<div>
-<h5 class="text-lg font-semibold mb-2">Digital Orchestration</h5>
-<p class="text-sm text-white/40">Custom-coded UI for the modern HUD, hidden behind a classic dashboard trim.</p>
-</div>
-</div>
-<div class="space-y-6">
-<div class="aspect-[4/5] rounded-xl overflow-hidden bg-white/5">
-<div class="h-full w-full bg-cover bg-center" data-alt="Alcantara steering wheel and shifter detail" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBICdkeXLR9QPt8y6kunF94P4RTtj2DIedzCbknm8vuMwZuGnRqwkRbx5Sav6OBLGv8-WtxbyUUZyorCpXDsJVi-CDuzKjw89WkUA_a8qgVeSSunkGTenOULUOg41_HIhUEpFe1rjxCkRPo4fS9uxXarnx0l6XOomU8snVauo2tRi30GY6rzB09TduK52U-EM2XCP58_7fdQ2WzfSAS_AOxV5MHZp-DHmtrz5B1212--btdGOJjZ-tglp5HOgty0fo9hlL5VuygJL8S");'></div>
-</div>
-<div>
-<h5 class="text-lg font-semibold mb-2">Alcantara Accents</h5>
-<p class="text-sm text-white/40">Headliner and pillar trim finished in premium charcoal Alcantara.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- Sticky Interaction Bar -->
-<footer class="sticky bottom-0 z-50 w-full border-t border-white/10 bg-background-dark/90 backdrop-blur-xl px-6 md:px-20 py-6">
-<div class="mx-auto max-w-[1200px] flex items-center justify-between">
-<div class="flex flex-col">
-<span class="text-[10px] font-bold uppercase tracking-widest text-white/40">Current Status</span>
-<span class="text-sm font-medium text-primary flex items-center gap-2">
-<span class="size-2 rounded-full bg-primary animate-pulse"></span>
+                    </div>
+
+                    <div class="md:w-1/2 grid grid-cols-2 gap-4">
+                        <div class="aspect-square rounded-xl bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-500" 
+                             data-alt="Detailed macro of the Hellephant engine" 
+                             style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBevbGwOhl1DxSn-cQrB8o-3_hArYYmOwNh4QDeQnnAj5MFbg_f3EQSyNLoeLAIZo6zSbo7fy5OIDyfuOWAv4MwbxuVHdjv5hViLZOTaAeN7r6d1-LjtNJnQx8_H9wAerrRu8gAs_1BelfQaiXC7_rGglgei0Xas6pQZNzwa4mwaFQDY_gU-P_03yeqjVlFUQsN25xrCZZjZ8AI9s1p5YQW-XBnujiJKzCTFBvDB1N8hzFBJf0Q73nq-6KohOQDxA8_WWuhP55ZSY1T");'></div>
+                        <div class="aspect-square rounded-xl bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-500" 
+                             data-alt="Carbon ceramic brake assembly detail" 
+                             style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAAXn-fg8_v8TjI3GghgjYNICipmjCt-JG5IcMtdC2cAMIB7IjNm_lmgN93tD_megskmodsKl6_Yxc42NMejii4nlpU1hq5Fv6x4DGZ2DjNppMcwodYUZhNugUjcDnqXFF6lVsuSBXVqJGLWT1L5tYgJ3YSTXv4kMKCfJbC1gKRj5wHshj2yOT3SVEeOMGnTLUu_lK0SVYUf4T4pbh95Nz67Ji65R0hwWT2vXyk-O9mAJ6vqmWags3DoTvf0DKfLvL_pnkFN_BeAuH3");'></div>
+                        <div class="col-span-2 aspect-[2/1] rounded-xl bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-500" 
+                             data-alt="Profile shot of the matte black charger" 
+                             style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCv8g_3_wr74V1pnYhDYCISxFMhnottZVPJSEJKAPkSUimh7ObkpBob9b1dGUeZj9edG4vWDBE6m4aCuG4kkKSCWGDknZx5wQGXKh4iaPOuo1xJ3xXd8zQphKvqnH2PZ-dXMsgFW4D46CW4uY9cBm0BQXs9ahRJeNmMil80ee17sw_TO0ofYZ0G9NnaMowBADMkPRd_gVvs_J7CMRqlKyvgZ-iiQuNuftZYfuGQ3PK8oh6C8D6sVVdQulsdwOnHG3tz-2Zx49nfO6OW");'></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="w-full px-6 md:px-20 py-24">
+                <div class="mx-auto max-w-[1200px]">
+                    <div class="flex items-end justify-between mb-12 border-b border-white/10 pb-6">
+                        <div>
+                            <h4 class="text-primary text-[10px] font-bold uppercase tracking-[0.3em] mb-2">Interior Mastery</h4>
+                            <h2 class="text-3xl font-light">Bespoke Craftsmanship</h2>
+                        </div>
+                        <div class="flex gap-4">
+                            <button class="size-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors">
+                                <span class="material-symbols-outlined">arrow_back</span>
+                            </button>
+                            <button class="size-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="space-y-6">
+                            <div class="aspect-[4/5] rounded-xl overflow-hidden bg-white/5">
+                                <div class="h-full w-full bg-cover bg-center" 
+                                     data-alt="Hand-stitched Italian Nappa leather interior detail" 
+                                     style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDVK6TIku3kNDH7tUg98zz5DWrtOZULZYYinH4wv7qcCxLJQeNpp9wT6MHkpLtV4CrP4HkPB6G_Bkur3jT4REkcq28CNJHWvhK3F4fqKrXMustwJUst6MBicv2DNIhoW4QG8005y9p3XX5OIdqGLP1z4Qpp8NqHme5X5mxuuriYYiZpSt7Hrv-ugQt6VVVn4RrlNG8WSTCDu9YTM_zEbTPM_fFvJhsfOZwaEOky7zxmDNQJncIwsbLGdkQ4lM_OSizWmh1kBqv89j-S");'></div>
+                            </div>
+                            <div>
+                                <h5 class="text-lg font-semibold mb-2">Italian Nappa Leather</h5>
+                                <p class="text-sm text-white/40">Hand-stitched deep espresso leather with contrast gold threading.</p>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="aspect-[4/5] rounded-xl overflow-hidden bg-white/5">
+                                <div class="h-full w-full bg-cover bg-center" 
+                                     data-alt="Modern digital gauge cluster integrated into classic dash" 
+                                     style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB6GJmzM7V39QCllOQEl3UnkSxKDYfZgd48sKDHtEUW7wl5OfemQ0mwwPkBVg-XSI67MRCuzeksPsW4NWESjTPJBh_No3Zfiep9bJJldw15YN89pYFwojyI4rLwLJR4ZHM2YlCEpGILVr0iwlkdgDCM_pj4kcyrclAiuEJbXTG3k8nVYh-7IKnuKTToCfFTbR4X1I7TrQzrmXM-HpbYHOF1UZPkw8b1C2GHHqSPUUTkso2hqyFfPUtI7Ls1GUrHX2_vokx7Jo5Nez1U");'></div>
+                            </div>
+                            <div>
+                                <h5 class="text-lg font-semibold mb-2">Digital Orchestration</h5>
+                                <p class="text-sm text-white/40">Custom-coded UI for the modern HUD, hidden behind a classic dashboard trim.</p>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="aspect-[4/5] rounded-xl overflow-hidden bg-white/5">
+                                <div class="h-full w-full bg-cover bg-center" 
+                                     data-alt="Alcantara steering wheel and shifter detail" 
+                                     style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBICdkeXLR9QPt8y6kunF94P4RTtj2DIedzCbknm8vuMwZuGnRqwkRbx5Sav6OBLGv8-WtxbyUUZyorCpXDsJVi-CDuzKjw89WkUA_a8qgVeSSunkGTenOULUOg41_HIhUEpFe1rjxCkRPo4fS9uxXarnx0l6XOomU8snVauo2tRi30GY6rzB09TduK52U-EM2XCP58_7fdQ2WzfSAS_AOxV5MHZp-DHmtrz5B1212--btdGOJjZ-tglp5HOgty0fo9hlL5VuygJL8S");'></div>
+                            </div>
+                            <div>
+                                <h5 class="text-lg font-semibold mb-2">Alcantara Accents</h5>
+                                <p class="text-sm text-white/40">Headliner and pillar trim finished in premium charcoal Alcantara.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="sticky bottom-0 z-50 w-full border-t border-white/10 bg-background-dark/90 backdrop-blur-xl px-6 md:px-20 py-6">
+            <div class="mx-auto max-w-[1200px] flex items-center justify-between">
+                <div class="flex flex-col">
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-white/40">Current Status</span>
+                    <span class="text-sm font-medium text-primary flex items-center gap-2">
+                        <span class="size-2 rounded-full bg-primary animate-pulse"></span>
                         Available for Private Treaty
                     </span>
-</div>
-<div class="flex items-center gap-4">
-<button class="hidden md:flex items-center gap-2 border border-white/20 px-6 py-3 rounded-lg text-xs font-bold uppercase tracking-widest hover:bg-white/5 transition-colors">
-<span class="material-symbols-outlined text-sm">download</span>
+                </div>
+                <div class="flex items-center gap-4">
+                    <button class="hidden md:flex items-center gap-2 border border-white/20 px-6 py-3 rounded-lg text-xs font-bold uppercase tracking-widest hover:bg-white/5 transition-colors">
+                        <span class="material-symbols-outlined text-sm">download</span>
                         Build Sheet
                     </button>
-<button class="bg-primary text-background-dark px-8 py-3 rounded-lg text-xs font-bold uppercase tracking-widest hover:scale-[1.02] active:scale-95 transition-all">
+                    <button class="bg-primary text-background-dark px-8 py-3 rounded-lg text-xs font-bold uppercase tracking-widest hover:scale-[1.02] active:scale-95 transition-all">
                         Inquire for Pricing
                     </button>
-</div>
-</div>
-</footer>
-<!-- Site Footer (Extra Depth) -->
-<div class="w-full px-6 md:px-20 py-20 bg-black">
-<div class="mx-auto max-w-[1200px] grid grid-cols-2 md:grid-cols-4 gap-12 border-t border-white/5 pt-12">
-<div class="col-span-2">
-<div class="flex items-center gap-3 text-primary mb-6">
-<span class="material-symbols-outlined text-3xl">token</span>
-<h1 class="text-xl font-extrabold tracking-tighter text-white uppercase">STRIDE</h1>
-</div>
-<p class="text-white/40 text-sm max-w-md leading-relaxed">
+                </div>
+            </div>
+        </footer>
+
+        <div class="w-full px-6 md:px-20 py-20 bg-black">
+            <div class="mx-auto max-w-[1200px] grid grid-cols-2 md:grid-cols-4 gap-12 border-t border-white/5 pt-12">
+                <div class="col-span-2">
+                    <div class="flex items-center gap-3 text-primary mb-6">
+                        <span class="material-symbols-outlined text-3xl">token</span>
+                        <h1 class="text-xl font-extrabold tracking-tighter text-white uppercase">STRIDE</h1>
+                    </div>
+                    <p class="text-white/40 text-sm max-w-md leading-relaxed">
                         A curated digital archive and premier marketplace for the world's most significant automotive achievements. From the legends of the 90s to the bespoke innovations of tomorrow.
                     </p>
-</div>
-<div class="flex flex-col gap-4">
-<h6 class="text-xs font-bold uppercase tracking-widest">Navigation</h6>
-<a class="text-sm text-white/40 hover:text-white transition-colors" href="#">Curated Museum</a>
-<a class="text-sm text-white/40 hover:text-white transition-colors" href="#">Marketplace</a>
-<a class="text-sm text-white/40 hover:text-white transition-colors" href="#">Journal</a>
-</div>
-<div class="flex flex-col gap-4">
-<h6 class="text-xs font-bold uppercase tracking-widest">Connect</h6>
-<a class="text-sm text-white/40 hover:text-white transition-colors" href="#">Instagram</a>
-<a class="text-sm text-white/40 hover:text-white transition-colors" href="#">X Archive</a>
-<a class="text-sm text-white/40 hover:text-white transition-colors" href="#">Membership</a>
-</div>
-</div>
-<div class="mx-auto max-w-[1200px] mt-20 flex justify-between items-center text-[10px] text-white/20 uppercase tracking-widest">
-<span>© 2024 Stride Automotive Group</span>
-<div class="flex gap-8">
-<a href="#">Privacy</a>
-<a href="#">Terms</a>
-</div>
-</div>
-</div>
-</div>
-</body></html>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h6 class="text-xs font-bold uppercase tracking-widest">Navigation</h6>
+                    <a class="text-sm text-white/40 hover:text-white transition-colors" href="#">Curated Museum</a>
+                    <a class="text-sm text-white/40 hover:text-white transition-colors" href="#">Marketplace</a>
+                    <a class="text-sm text-white/40 hover:text-white transition-colors" href="#">Journal</a>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h6 class="text-xs font-bold uppercase tracking-widest">Connect</h6>
+                    <a class="text-sm text-white/40 hover:text-white transition-colors" href="#">Instagram</a>
+                    <a class="text-sm text-white/40 hover:text-white transition-colors" href="#">X Archive</a>
+                    <a class="text-sm text-white/40 hover:text-white transition-colors" href="#">Membership</a>
+                </div>
+            </div>
+            
+            <div class="mx-auto max-w-[1200px] mt-20 flex justify-between items-center text-[10px] text-white/20 uppercase tracking-widest">
+                <span>© <span id="current-year"></span> Stride Automotive Group</span>
+                <div class="flex gap-8">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
