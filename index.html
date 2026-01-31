@@ -345,20 +345,28 @@
             </div>
         </div>
         <div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between text-white/30 text-[10px] font-bold tracking-[0.3em] uppercase">
-            <p>© 2024 STRIDE AUTOMOTIVE. ALL RIGHTS RESERVED.</p>
-            <div class="flex gap-8 mt-4 md:mt-0">
-                <a class="hover:text-primary transition-colors" href="#">Instagram</a>
-                <a class="hover:text-primary transition-colors" href="#">Youtube</a>
-                <a class="hover:text-primary transition-colors" href="#">Privacy</a>
-            </div>
-        </div>
+          <p>© <span id="current-year"></span> STRIDE AUTOMOTIVE. ALL RIGHTS RESERVED.</p>
+          
+          <p class="text-center mt-2 md:mt-0">Made by <a href="https://gideonabe.netlify.app/" class="hover:text-primary transition-colors text-white text-md">DEON</a></p>
+          
+          <div class="flex gap-8 mt-4 md:mt-0">
+              <a class="hover:text-primary transition-colors" href="#">Instagram</a>
+              <a class="hover:text-primary transition-colors" href="#">Youtube</a>
+              <a class="hover:text-primary transition-colors" href="#">Privacy</a>
+          </div>
+      </div>
+      
+
     </footer>
 
     <!-- <button class="fixed bottom-10 right-10 z-50 flex items-center gap-4 bg-primary text-black px-6 py-4 shadow-2xl hover:bg-white transition-all group overflow-hidden">
-        <span class="text-xs font-bold tracking-[0.2em] uppercase whitespace-nowrap">Enquire Now</span>
-        <div class="w-8 h-8 flex items-center justify-center">
-            <span class="material-symbols-outlined text-black group-hover:translate-x-1 transition-transform">arrow_forward_ios</span>
-        </div>
+      <span class="text-xs font-bold tracking-[0.2em] uppercase whitespace-nowrap">Enquire Now</span>
+      <div class="w-8 h-8 flex items-center justify-center">
+        <span class="material-symbols-outlined text-black group-hover:translate-x-1 transition-transform">arrow_forward_ios</span>
+      </div>
     </button> -->
+      <script>
+          document.getElementById('current-year').textContent = new Date().getFullYear();
+      </script>
 </body>
 </html>
